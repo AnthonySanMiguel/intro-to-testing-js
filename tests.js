@@ -26,4 +26,3 @@ describe("sayHello", function() {
         expect(sayHello()).toBe("Hello, Jane!");
     });
 });
-
