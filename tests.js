@@ -22,13 +22,34 @@ describe("sayHello", function() {
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
-    it('should return "Hello, Jane!"', function() {
+    it('if input is "Jane", return "Hello, Jane!"', function() {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
-    it('should return "Hello, Alex!"', function() {
+    it('if input is "Alex", return "Hello, Alex!"', function() {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
-    it('should return "Hello, Pat!"', function() {
+    it('if input is "Pat", return "Hello, Pat!"', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it('if Undefined, return "Hello, World!"', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('if false, return "Hello, World!', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('if Null, return "Hello, World!"', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('if "", return "Hello, World!', function() {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it('if 5.11, return "Hello, World!', function() {
+        expect(sayHello(5.11)).toBe("Hello, World!");
+    });
+    it('if "5", return "Hello, World!', function() {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
+    it('if not a string, return "Hello, World!', function() {
+        expect(sayHello([])).toBe("Hello, World!");
     });
 });
