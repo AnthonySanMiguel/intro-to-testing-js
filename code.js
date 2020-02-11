@@ -17,7 +17,7 @@
 //     }
 // }
 
-// EXERCISE 6-8 (refactor above + EXERCISE 8 edge cases)
+// EXERCISE 6-9 (refactor above + EXERCISE 8 edge cases)
 
 //     if (typeof x === "string" && x !== Number) {
 //         return "Hello, " + x + "!";
@@ -36,3 +36,11 @@
 
 //      return (x === undefined || x == false) ? "Hello, World!" : ("Hello, " + x + "!");
 // }
+
+// EXERCISE 10
+
+function isFive(x) {
+    if(x === 'boolean' || x !== Number) {
+        return true;
+    }
+}
