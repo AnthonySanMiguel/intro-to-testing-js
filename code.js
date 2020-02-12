@@ -39,8 +39,15 @@
 
 // EXERCISE 10
 
-function isFive(x) {
-    if(x === 'boolean' || x !== Number) {
+// function isFive(x) {
+//     if(x === 'boolean' || x !== Number) {
+//         return true;
+//     }
+// }
+
+// EXERCISE 11
+
+function isEven(x) {
+    if (x % 2 === 0) {
         return true;
-    }
-}
+    } else return x === Number || x === Infinity;}
